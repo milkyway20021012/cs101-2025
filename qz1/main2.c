@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int amin(){
+int main(){
   int i =12345;
   int first;
   int last = first = i% 10;
