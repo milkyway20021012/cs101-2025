@@ -4,7 +4,7 @@ int main()
 {
     // 8bits to 16進制
 
-    char a[] = "10001111";
+    char a[] = "10100011";
     int sum = 0;   // 計算總和
     int power = 8; // 用來充當2的n次方
     int Bits = 4;  // 用來判斷是否已經計算了 4個bits
