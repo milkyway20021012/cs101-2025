@@ -5,7 +5,7 @@ int main()
 {
     char a[] = "Hello";
     int len = strlen(a);
-    for(int i = 0,j=len-1; i!=j;i++,j--){
+    for(int i = 0,j=len-1; i!=j && i+1 != j;i++,j--){
         char tmp = a[i];
         a[i] = a[j];
         a[j] = tmp;
