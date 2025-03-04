@@ -418,6 +418,6 @@ FodyWeavers.xsd
 *.exe
 
 # .program
-Program
+program*
 
 *.DS_Store
