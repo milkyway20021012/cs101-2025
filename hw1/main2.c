@@ -7,7 +7,7 @@ int main(){
     int j = 0; // 字母字元的起始位置
     
     while(a[j] != '\0'){
-        while(a[i]-- > 48){
+        while(a[i] < 58 && a[i]-- > 48){
             printf("%c",a[j]);
         }
         i+=2;
