@@ -2,7 +2,8 @@
 
 int main(){
     // '0' = 48
-    char a[] = "A9B1C3f3";
+    char a[256];
+    scanf("%s",a);
     int i = 1; // 數字字元的起始位置
     int j = 0; // 字母字元的起始位置
     

@@ -2,7 +2,8 @@
 
 int main()
 {
-    char a[] = "AAABBBCCCCddd";
+    char a[256];
+    scanf("%s",a);
     int i = 0;
     int count = 1;
     int flag = 1;
