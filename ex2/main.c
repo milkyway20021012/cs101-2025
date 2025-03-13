@@ -67,10 +67,12 @@ int main()
     strcpy(emp[2].em_name, "swift");
     emp_writefile(emp, 3);
     employee_t read_emp[10];
-    emp_readfile(read_emp,sizeof(read_emp[0])/sizeof(read_emp[0]));
+    emp_readfile(read_emp, sizeof(read_emp[0]) / sizeof(read_emp[0]));
     for (int i = 0; i < 3; i++)
     {
         employee_info(read_emp[i]);
     }
+    int ret = emp_aveage_age(emp, 3);
+    printf("%d\n", ret);
     return 0;
 }
