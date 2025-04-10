@@ -1,21 +1,20 @@
 #include <stdio.h>
-int multi(int i, int j)
+void multi(int i, int j)
 {
-    if (j == 1)
+    if (j == 0)
     {
-        printf("%d*%d=%d\n", i, j, i * j);
-        return i;
+        return;
     }
-    else
-    {
-        multi(i, j - 1);
-        printf("%d*%d=%d\n", i, j, i * j);
-    }
-    
+    multi(i, j - 1);
+    printf("%d*%d=%d\t", i, j, i * j);
 }
 
 int main()
 {
-    multi(0, 9);
+    for (int i = 1; i <= 9; ++i)
+    {
+        multi(i, 9);
+        printf("\n");
+    }
     return 0;
 }
