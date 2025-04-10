@@ -1,37 +1,21 @@
 #include <stdio.h>
-
+#include <string.h>
 int main()
 {
-    char a[256];
-    scanf("%s",a);
-    int i = 0;
+    char buf[256];
     int count = 1;
-    int flag = 1;
-    while (a[i] != '\0')
+    scanf("%s", buf);
+    for (int i = 0; i < strlen(buf); ++i)
     {
-        char cur = a[i];
-        if (a[i + 1] == cur)
+        if (buf[i + 1] != buf[i])
         {
-            count++;
-            ++i;
-            flag = 0;
+            printf("%c%d", buf[i], count);
+            count = 1;
         }
         else
         {
-            flag = 1;
-        }
-        if (flag)
-        {
-            // count 最多九個
-            if (count > 9)
-            {
-                count = 9;
-            }
-            printf("%c%d", a[i], count);
-            count = 1;
-            ++i;
+            count++;
         }
     }
-
     return 0;
 }
